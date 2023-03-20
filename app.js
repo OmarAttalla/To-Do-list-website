@@ -23,13 +23,13 @@ function addTodo(event){
     //add checkmark button
     const checkButton = document.createElement("button");
     checkButton.innerHTML = '<i class="fas fa-check"></i>';
-    checkButton.classList.add("complete-btn");
+    checkButton.classList.add("check-btn");
     todoDiv.appendChild(checkButton);
 
     //add trash button
     const trashButton = document.createElement("button");
     trashButton.innerHTML = '<i class="fas fa-trash"></i>';
-    trashButton.classList.add("complete-btn");
+    trashButton.classList.add("trash-btn");
     todoDiv.appendChild(trashButton);
 
     //append todo div to todolist
