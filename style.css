@@ -16,7 +16,7 @@ header{
 }
 
 header, form{
-min-height: 20vh;
+    min-height: 20vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,4 +38,56 @@ form button{
 form button:hover{
     background: #f5b761;
     color: white;
-    }
+}
+
+.todo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-list{
+    list-style: none;
+    min-width: 30%;
+    
+}
+
+.todo{
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+    align-items: center;
+}
+
+.todo li{
+    flex: 1;
+}
+
+.todo-item{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.check-btn, .trash-btn{
+    border: none;
+    padding: 0.7rem;
+    background-color: #1be153;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.trash-btn{
+    background-color: #e13f1b;
+}
+
+.check-btn:hover{
+    background-color:rgb(212, 212, 212);
+    color: #1be153;
+}
+
+.trash-btn:hover{
+    background-color: rgb(213, 212, 212);
+    color: #e13f1b;
+}
